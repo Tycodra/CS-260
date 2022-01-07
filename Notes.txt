@@ -1,1 +1,20 @@
+Digital Ocean
 
+Create a droplet after having made an account and linking it to github to get the $100 credit.
+On the top, click "create" -> "droplet"-> "ubuntu" -> "basic" -> "regular Intel with SSD" -> "$5/mo" -> "wherever is fine" -> "SSH keys" -> create temp key using steps below -> "1 droplet" -> "name that makes sense" -> Don't do backups because its not free. -> "create droplet"
+
+cat id_rsa.pub | pbcopy
+
+Create as RSA keys
+mkdir ~/keys/digitalocean
+cd ~/keys/digitalocean
+ssh-keygen
+id_rsa
+passphrase? no
+
+ssh -i id_rsa root@"whatever my ip address is"
+"yes"
+
+Register hostname at AWS -> Route53 -> "Registered domains" -> create a domain name that is available
+
+Create a connection between the server ip and your domain name using DNS with "create record"->"A"->"Droplet IP address"->"define"
