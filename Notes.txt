@@ -18,3 +18,28 @@ ssh -i id_rsa root@"whatever my ip address is"
 Register hostname at AWS -> Route53 -> "Registered domains" -> create a domain name that is available
 
 Create a connection between the server ip and your domain name using DNS with "create record"->"A"->"Droplet IP address"->"define"
+
+VisualStudioCode
+^p helps you to search for things
+^t helps you to search by file type
+^shift-p this gives all the commands the computer knows about
+
+Vi
+i - insert - can type, leave with esc
+:w -write (save)
+:q -quit (exit the text editor)
+:split the same file into two screens
+:e edit - provide the file name
+/ performs a search
+:%s/<text to be changed>/<new text>
+gg - go to top of text
+dd - delete line
+u - undoes what was does
+:set number - this makes the line number appear
+
+
+
+Html
+anchor - "<a ref="2.html">Got to TWO</a>" when you click on this, it will open 2.html
+
+
