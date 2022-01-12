@@ -42,4 +42,30 @@ u - undoes what was does
 Html
 anchor - "<a ref="2.html">Got to TWO</a>" when you click on this, it will open 2.html
 
+<!DOCTYPE html>
+<!-- HTML5 delcaration -->
+
+<title>HTML INTRO</title>
+
+<style> </style>
+<h1> Top big heading </h1>
+<p>
+  If yo think this page is ugly, you should check out the 
+  <a href="some other url">first public web page</a>.
+</p>
+
+Pre - Preformatted text - this lets the server know you don't want it to interpret certain section and to display them as they're written
+
+Entity - a certain type of symbol that would usually change html (eg. "&lt;" for /
+
+Lists
+  ordered vs unordered, whether or not it provides a number
+  
+<strong> tags tells you certain text should be more important, usually bold
+
+Media
+
+<img alt="Arches" src="https:/images.pexels.com:443/photos/164170/pexels-photo...jpg></img>
+
+
 
