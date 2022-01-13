@@ -56,7 +56,7 @@ anchor - "<a ref="2.html">Got to TWO</a>" when you click on this, it will open 2
 
 Pre - Preformatted text - this lets the server know you don't want it to interpret certain section and to display them as they're written
 
-Entity - a certain type of symbol that would usually change html (eg. "&lt;" for /
+Entity - a certain type of symbol that would usually change html (eg. "&lt;" for /)
 
 Lists
   ordered vs unordered, whether or not it provides a number
@@ -67,5 +67,30 @@ Media
 
 <img alt="Arches" src="https:/images.pexels.com:443/photos/164170/pexels-photo...jpg></img>
 
+"cd /etc/nginx"
+sudo certbot --nginx -d lab1.tycodra.com
+restart nginx server at some point
+
+
+Git
+git diff HEAD~1 HEAD~2 would show the differences between two commits
+git commit -am "a message tied to the commit" -a means to add
+git push - sends everything up to github
+git fetch - shows what is going on when there is a discrepency between github and server
+git rebase - puts the change on github prior to your new change as if it was originally in that order
+
+ssh into server
+cd source
+git clone <git repo url>
+vp -r . /var/www/lab1
+
+
+D7 Git
+Create repository on Github
+Clone down from github. Github -> myServer
+repo name "Portfolio"
+Public
+Add README
+on server: "git clone <the copied gitrepo url>"
 
 
