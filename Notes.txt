@@ -67,9 +67,10 @@ Media
 
 <img alt="Arches" src="https:/images.pexels.com:443/photos/164170/pexels-photo...jpg></img>
 
-"cd /etc/nginx"
 sudo certbot --nginx -d lab1.tycodra.com
-restart nginx server at some point
+"cd /etc/nginx/sites-available"
+vim default and find server section for lab1.tycodra.com
+after you have changed root, you'll need to reload nginx "sudo service nginx reload"
 
 
 Git
@@ -82,7 +83,7 @@ git rebase - puts the change on github prior to your new change as if it was ori
 ssh into server
 cd source
 git clone <git repo url>
-vp -r . /var/www/lab1
+cp -r . /var/www/lab1
 
 
 D7 Git
