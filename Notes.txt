@@ -114,7 +114,11 @@ p { - change all of the paragraphs in my html to these specs
  section > p {} - 
  section p {} - all p's that are descendents
  
+ Adding style to html
  Style attribute: <div style="color:red;">I'm red</div>
  Style element: <style> dive {color:red;} </stle>
  External file: <link rel="stylesheet" href="style.css" />
+ 
+ Box model: [Margin[Border[Padding[content: 965x2235.920]Padding]Border]Margin]
+ 
  
