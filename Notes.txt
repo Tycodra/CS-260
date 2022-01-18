@@ -95,3 +95,26 @@ Add README
 on server: "git clone <the copied gitrepo url>"
 
 
+CSS basics
+p { - change all of the paragraphs in my html to these specs
+  background: blue;
+  
+  color:yellow;
+  
+ }
+ * { margin:0;padding:0; } - this applies to everything
+ h1 { color: red; } - only h1
+ h1,h2 {} - changes to h1 and h2
+ .<className> {} - changes to any element with the given class
+ #id {} - a unique id for an element html- id="..."
+ li[selected] {} - any list item that is selected
+ div[title="life"] {} - 
+ a:hover, a:visited {} - anchor, if you hover over it or click it, something happens
+ h2:first-child {} - hierarchy, chooses the first child element that is contained in each h2
+ section > p {} - 
+ section p {} - all p's that are descendents
+ 
+ Style attribute: <div style="color:red;">I'm red</div>
+ Style element: <style> dive {color:red;} </stle>
+ External file: <link rel="stylesheet" href="style.css" />
+ 
