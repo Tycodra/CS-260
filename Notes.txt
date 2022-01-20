@@ -121,4 +121,17 @@ p { - change all of the paragraphs in my html to these specs
  
  Box model: [Margin[Border[Padding[content: 965x2235.920]Padding]Border]Margin]
  
+ Responsive tools:
+ <meta name="viewport"/>
+ float:right
+ display:grid
+ display:flex
+ @media
  
+ External Display:
+ block-newline (h1,p)
+ inline - no top/bottom or height-width (span)
+ none - hidden
+ 
+ Internal Display:
+ grid: box with grid display
