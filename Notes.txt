@@ -135,3 +135,90 @@ p { - change all of the paragraphs in my html to these specs
  
  Internal Display:
  grid: box with grid display
+ 
+ 
+ Design
+ 
+ Simplicity - Don't crowd the page with crap. Focus on what the user is there for. 
+ Consistency - Don't make users have to think too much. Make it easy. 
+ 
+ Holy grail of design layouts
+  App bar - top
+  Nav - left
+  footer - bottom
+  settings - top right
+  popout - right
+  main - center
+  
+  You don't want to have too many font sizes. Aim for this ballpark of text sizes.
+  Page title - 96 px
+  Titles - 48-20px
+  Text - 16px
+  Secondary text - 14px
+  Input - 16px
+ 
+ Line length
+  Opt for more narrow sections of text. Its easier for readers to follow.
+  
+ Utilize the site: marterial.io
+  They have many design utilities that have been verified by intelligent individuals. Apparently.
+  
+ Typography
+  Serif - have the little tails
+  San serif - No little tails
+  Monospace - There is the same size available for each character
+  Handwriting - Funky little fonts that should be used sparingly
+  Less fonts the better
+  
+ Color
+  Come up with a color scheme first
+  Material theme builder or Adobe Color or Paletton.com
+  Primary, secondary, and focus
+  
+ Iconography
+  Use standar icons - don't try and use a unique icon for something standard that no one would know.
+  Google, bootstrap, font awesome - all have icons that we can use
+  
+ Images must add value - whatever you add, make sure it adds to the experience and applies
+ Images should tell a story
+ 
+ Whitespace
+  Whitespace around text is easier on the eyes. It enables better focus. Often less is more with user experience.
+  
+ Navigation
+  Sitemap - a structure that holds up your content and comprises the navigation of your site
+  You don't want too many options, but make sure you have the main uses easily accessible.
+  Display location - where am I?
+  Browser controls - The buttons need to work with your website.
+  Breadcrumbs - You want to be able to follow the path you traversed
+  Anticipate common paths
+  
+  Search Engine Optimization
+    Robots.txt - placed in the root of the website
+    Tell the robots what they are allowed and disallowed to do. 
+    Sitemap files - xml - gives location and when it was last modified
+    
+   Walls
+    Dont build walls for your users - registration, paywall, login, sign-up, captcha, accept all cookies, etc.
+    
+   Internationalization
+    Language, currency, times and dates, numbers, icons, images
+    
+   Animations
+   
+   Accessibility
+    Visual - high contrast theme, screen reader support
+    Audio - closed caption, visual animation
+    Physical - keyboard navigation
+    
+   Interaction
+    
+   Performace
+    Lighthouse - can check the performance of your website
+    Don't use massive images
+    
+   GDPR - Privacy, HIPA - Health, SOC - Payment
+   
+   
+  
+  
