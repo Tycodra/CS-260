@@ -212,6 +212,7 @@ p { - change all of the paragraphs in my html to these specs
     Physical - keyboard navigation
     
    Interaction
+    Don't add a component that looks like it should be closable/interactable, but you can't actually interact with it.
     
    Performace
     Lighthouse - can check the performance of your website
