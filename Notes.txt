@@ -220,6 +220,188 @@ p { - change all of the paragraphs in my html to these specs
     
    GDPR - Privacy, HIPA - Health, SOC - Payment
    
+   Javascript
    
+   Adding script to HTML
+   Inline
+    <div onclick="console.log('hello')">click</div>
+   Script element
+    <script> console.log('hello')</script>
+   External File
+    <script src="main.js" />
+    
+    'use strict';
+    //noDeclaration = 3; needs to be declared as a variable first
+    //var undefined = 3; this uses a keyword - can't be doing that
+    //function bad(a, a, b) {}; can't use duplicate parameters
+    //'x'.name = 'rat'; can't change an immutable thing like this
+    
+    function equality() {
+    1 + 1;
+    1 == 1;
+    1 != 2;
+    
+    //all true
+    false == 0;
+    0 == '';
+    null == undefined;
+    [] == false;
+    !![0] == true; not not - double negatives cancel out
+    
+    //all false
+    false == null;
+    NaN == NaN;
+    Infinity == true;
+    [] == true;
+    [0] == true;
+    
+    /* truthy and falsy */
+    x = null;
+    y = undefined;
+    x == y; this is true
+    x === y; this is false 
+    
+    1 === 2;
+    1 !== 1;
   
+    let g = 1000; 
+    function variables() {
+    var x = 1;
+    let y = 1;
+    const z = 'tacos';
+    
+    console.log(g, x, y, z);
+    
+    //this is why 'var' is deprecated
+    {
+      var x = 2; // same variable
+      var g = 2;
+      console.log(x,g);
+     }
+    console.log(x,g);
+    
+    {
+      let y = 2;
+      console.log(y); 
+    }
+    console.log(y);
+    
+    function weaklyTyped() {
+    let x = 'fish';
+    console.log('type changed: ', typeof x, x);
+    x = 1;
+    console.log('type changed: ', typeof x, x);
+    x = [1,2];
+    console.log('type changed: ', typeof x, x);
+    x = null;
+    console.log('type changed: ', typeof x, x);
+    x = undefined;
+    console.log('type changed: ', typeof x, x);
+    
+    console.log('rat' + [' fink']);
+    console.log(1 + 'rat');
+    console.log(1 * 'rat');
+    
+    function conditionals() {
+    if (true) {
+      console.log('true');
+    }
+    
+    if ((!false && false) || (true && !false) {
+      console.log('true');
+    }
+    
+    for (let i = 1; i < 3; i++;) {
+      console.log('for ${i}');
+    }
+    
+    while (true) {
+      console.log('while');
+      break;
+    }
+    
+    const pet = 'fish';
+    switch (pet) { /// I didn't get this full function written down
+      case 'fish':
+        console.log('fish');
+        break;
+      default:
+        console.log('default');
+    }
+    
+    function functions() {
+    //parameters and return value
+      let f = function (i) {
+        return i;
+      };
+      console.log(f(3));
+      
+      f = function (a, b, c = 'rat') {
+        return [a, b, c];
+      };
+      
+   function arrowFunctions() {
+   const arrow = () => 1;
+   
+   const arrowWithBlock = (a) => {
+    a;
+   };
+   
+   const arrowWithReturn = (a) => {
+    return a;
+   };
+   
+   console.log(arrow(), arrowWithBlock(2), arrowWithReturn(3));
+   
+   return 'end';
+   }
+   
+   function closures() {
+    function dup(i, sep = ':') {
+      let dupLimit = i;
+     return (t) => {
+      let dupCount = dupLimit;
+      let out = t;
+      while (dupCount-- > 1) {
+        out += sep + t;
+      }
+      return out;
+     };
+    }
+    
+    console.log(dup(4)('hello'));
+    console.log(dup(3)('again'));
+    
+    return 'end';
+   }
+   
+   function strings() {
+   const s - 'Cats Dogs Rats Mice';
+   casefold: s.toUpperCose() or s.toLowerCase()
+   split: s.split(' '); ['Cats', 'Dogs', 'Rats', 'Mice']
+   endsWith: s.endsWith('Mice'); bool
+   replace: s.replace('Dogs', 'Puppies');
+    
+  function arrays() {
+  let numbers = [];
+  for (let i = 1; i < 11; i++) {
+    number.push(i);
+   }
+  ('push 10: ', numbers)
+  ('pop: ', numbers.pop())
+  ('numbers[1]:', numbers.slice(2,5));
+  (length:', numbers.length);
   
+  for (let entry of numbers) {
+    console.lot(entry);
+    if (entry == 3) break;
+  }
+  
+  return 'end';
+  }
+  
+  function arrayOperations() {
+  'map', numbers.map((n) => n* 100)
+  'reduce', numbers.reduce((p, c) => p + c)
+  'filter', numbers.filter((n) => n % 2) anything that returns true will be kept
+  'some', numbers.some((n) => n > 5) bool - there was something in that was greater than 5
