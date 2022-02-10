@@ -405,3 +405,43 @@ p { - change all of the paragraphs in my html to these specs
   'reduce', numbers.reduce((p, c) => p + c)
   'filter', numbers.filter((n) => n % 2) anything that returns true will be kept
   'some', numbers.some((n) => n > 5) bool - there was something in that was greater than 5
+  
+  URL
+  https://-cs260.click-:443-/api/city-?q=pro-#3
+  Scheme-Host-Port-Path-Query-Fragment
+  
+  fetch
+  fetch(url)
+    .then(r => return r.text())
+    .then(text => console.log(text))
+    
+  function logFetcher(url) {
+    fetch(url)
+      .then((r) => {
+        if (r.ok) {
+          return r.json();
+        }
+        throw '[${r.status}] ${r.statusText}';
+      })
+      .then((json) => {
+        console.log(json);
+      })
+      .catch((error) => {
+        console.log(error);
+      })
+    
+  Request 
+    Methods
+      Get - get an existing resource(no body)
+      Post - create a new resource
+      Put - Update an existing resource
+      Delete - Delete a resource
+      Options - Get information about a resource
+    
+  Response
+    Status Codes
+      200: 200 success, 204 no content
+      300: 301/301 redirect, 304 not modified
+      400: 400 bad request, 404 not found, 403 forbidden, 429 too many requests
+      500: 500 server error, 503 not available
+    
